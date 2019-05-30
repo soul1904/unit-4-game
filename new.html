@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row col-md-4 head">
+            <h1>Crystal Collector</h1>
+        </div>
+        <div class="card col-md-8" style="width: 50rem;">
+            <div class="card-body">
+
+                <p class="card-text"> you will be given a random number at the start of the game.
+                    there are four crystals below. by checking on a crystal you will add a specific amount of points to
+                    your
+                    total
+                    score.
+                    you win the game by matching your total score goes above the random number.
+                    the value of each crystal is hidden from you until you click on it.
+                    each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-8 ">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="realityStone">
+                            <img id="ether"
+                                src="https://cdn.shopify.com/s/files/1/0380/5717/products/round-chatham-lab-grown-pink-sapphire-gems_1024x1024.png?v=1535067530"
+                                alt="red crystal">
+                            <p id="redCrystal"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="spaceStone">
+                            <img id="space"
+                                src="https://dumielauxepices.net/sites/default/files/gemstone-clipart-green-gem-618981-5261663.jpg"
+                                alt="blue crystal">
+                            <p id="crystalScore2"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="soulStone">
+                            <img id="soul"
+                                src="https://cdn.shopify.com/s/files/1/0936/4594/products/Topaz_Swiss_Blue_Round_O_76dbab3f-3911-45f2-9513-53728dc18f8d_1024x1024.png?v=1525040353"
+                                alt="orange crystal">
+                            <p id="crystalScore3"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="mindStone">
+                            <img id="mind"
+                                src="https://cdn.shopify.com/s/files/1/0380/5717/products/pear-chatham-lab-grown-blue-sapphire-gems_1024x1024.png?v=1535067510"
+                                alt="yellow crystal">
+                            <p id="crystalScore4"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5" id="computer-score">
+                        <div class="panel panel-default comp">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Computer Score</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h6 id="computerScore"> </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5" id="player-score">
+                        <div class="panel panel-default player">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Player Score</h3>
+                            </div>
+
+                            <h6 id="playerScore"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default score">
+
+                        <div class="panel-body">
+                            <h4>Wins</h4>
+                            <p id="wins"></p>
+                            <h4>Losses</h4>
+                            <p id="losses"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
